@@ -1,4 +1,4 @@
-package nodes
+package binary
 
 type Node struct {
 	Value int

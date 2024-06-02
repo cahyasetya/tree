@@ -2,11 +2,9 @@ package binary
 
 import (
 	"fmt"
-
-	"github.com/cahyasetya/tree/nodes"
 )
 
-func InOrder(root *nodes.Node) {
+func InOrder(root *Node) {
 	if root == nil {
 		return
 	}
@@ -16,7 +14,7 @@ func InOrder(root *nodes.Node) {
 	InOrder(root.Right)
 }
 
-func PreOrder(root *nodes.Node) {
+func PreOrder(root *Node) {
 	if root == nil {
 		return
 	}
@@ -26,7 +24,7 @@ func PreOrder(root *nodes.Node) {
 	PreOrder(root.Right)
 }
 
-func PostOrder(root *nodes.Node) {
+func PostOrder(root *Node) {
 	if root == nil {
 		return
 	}
