@@ -1,33 +1,37 @@
-package main
+package binary
 
-import "fmt"
+import (
+	"fmt"
 
-func inOrder(root *Node) {
+	"github.com/cahyasetya/tree/nodes"
+)
+
+func InOrder(root *nodes.Node) {
 	if root == nil {
 		return
 	}
 
-	inOrder(root.left)
-	fmt.Println(root.value)
-	inOrder(root.right)
+	InOrder(root.Left)
+	fmt.Println(root.Value)
+	InOrder(root.Right)
 }
 
-func preOrder(root *Node) {
+func PreOrder(root *nodes.Node) {
 	if root == nil {
 		return
 	}
 
-	fmt.Println(root.value)
-	preOrder(root.left)
-	preOrder(root.right)
+	fmt.Println(root.Value)
+	PreOrder(root.Left)
+	PreOrder(root.Right)
 }
 
-func postOrder(root *Node) {
+func PostOrder(root *nodes.Node) {
 	if root == nil {
 		return
 	}
 
-	preOrder(root.left)
-	preOrder(root.right)
-	fmt.Println(root.value)
+	PreOrder(root.Left)
+	PreOrder(root.Right)
+	fmt.Println(root.Value)
 }
