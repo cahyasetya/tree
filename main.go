@@ -10,5 +10,5 @@ func main() {
 		Left:  &binary.Node{Value: 3, Left: &binary.Node{Value: 2, Left: nil, Right: nil}, Right: &binary.Node{Value: 4, Left: nil, Right: nil}},
 		Right: &binary.Node{Value: 7, Left: &binary.Node{Value: 6, Left: nil, Right: nil}, Right: &binary.Node{Value: 8, Left: nil, Right: nil}},
 	}
-	binary.PostOrder(tree)
+	binary.LevelOrder(tree)
 }

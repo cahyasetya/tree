@@ -1,6 +1,7 @@
 package binary
 
 import (
+	"container/list"
 	"fmt"
 )
 
@@ -32,4 +33,23 @@ func PostOrder(root *Node) {
 	PreOrder(root.Left)
 	PreOrder(root.Right)
 	fmt.Println(root.Value)
+}
+
+func LevelOrder(root *Node) {
+	lst := list.New()
+	lst.PushBack(root)
+
+	for lst.Len() != 0 {
+		front := lst.Front().Value.(*Node)
+		if front != nil {
+			fmt.Println(front.Value)
+			if front.Left != nil {
+				lst.PushBack(front.Left)
+			}
+			if front.Right != nil {
+				lst.PushBack(front.Right)
+			}
+			lst.Remove(lst.Front())
+		}
+	}
 }
