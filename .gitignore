@@ -1,0 +1,64 @@
+# Visual Studio Specific Ignored Files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio workspace and other files
+.vscode/
+.vs/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+
+# Golang Specific Ignored Files
+
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+*.out
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.cov
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go profiler
+*.prof
+
+# Dependency directories (as of Go 1.11 modules)
+vendor/
+
+# Go workspace file and directories
+go.work
+go.work.sum
+
+# Go module files
+go.sum
